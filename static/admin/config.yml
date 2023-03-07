@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: River0f/netlify-blog
 
 media_folder: "static/images/uploads"
 media_library:
