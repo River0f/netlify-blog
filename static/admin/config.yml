@@ -5,6 +5,10 @@ backend:
 media_folder: "images/uploads"
 media_library:
    name: uploads
+    config:
+    publicKey: demopublickey
+
+public_folder: "images"
 
 collections:
   - name: "blog"
