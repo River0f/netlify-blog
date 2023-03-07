@@ -1,3 +1,4 @@
+import React from 'react';
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -10,8 +11,8 @@
 exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: `en` })
   setHeadComponents([
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>,
-    <script dangerouslySetInnerHTML={{
+    <script key="netlify-identity-widget" src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>,
+    <script key="indentity" dangerouslySetInnerHTML={{
       __html: `if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
